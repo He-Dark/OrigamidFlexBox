@@ -1,135 +1,141 @@
-body, h1, h2, p, ul, li, a {
-	margin: 0px;
-	padding: 0px;
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: "Nunito", Helvetica, Arial, sans-serif;
-	color: #222222;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  color: #222222;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-	display: block;
-	max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/*Superinfo*/
+/* Superinfo */
 
 .superinfo-bg {
-	background: #122ab2;
-	color: white;
+  background: #122ab2;
+  color: white;
 }
 
 .superinfo {
-	max-width: 960px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding-top: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
 }
-
-.superinfo p, .superinfo a{
-	margin: 0 10px 10px 10px;
+.superinfo p,
+.superinfo a {
+  margin: 0 10px 10px 10px;
 }
 
 .superinfo a {
-	color: white;
+  color: white;
 }
 
-/*Menu*/
+/* Menu */
 
 .menu-bg {
-	background: #2c70ff;
+  background: #2c70ff;
 }
 
 .menu {
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 15px 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu a {
-	color: white;
+  color: white;
 }
 
-.menu-logo a {
-	font-size: 2.25em;
-	font-weight: bold;
-	margin: 0 10px;
+.menu-logo {
+  font-size: 2.25em;
+  font-weight: bold;
+  margin: 0 10px;
 }
 
 .menu-nav ul {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap; /* Vai quebrar quando nao couber mais na mesma linha */
 }
 
 .menu-nav a {
-	font-size: 1.25em;
-	display: block;
-	padding: 10px;
+  font-size: 1.25em; /* 20/16 = 1,25 */
+  display: block;
+  padding: 10px;
 }
 
-.menu-nav a:hover{
-	color: #122ab2;
+.menu-nav a:hover {
+  color: #122ab2;
 }
 
-/*Introdução*/
-
+/* Introducao */
+/* tipografia grande geralmente diminui o line-height (altura da linha)*/
 .introducao {
-	font-size: 3em;
-	line-height: 1;
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 60px 10px;
+  font-size: 3em;
+  line-height: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 10px;
 }
 
-/*Sobre*/
+/* Sobre */
 
 .sobre {
-	border-top: 2px solid #2c70ff;
-	border-bottom: 2px solid #2c70ff;
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 60px 0;
-	display: flex;
-	flex-wrap: wrap;
+  border-top: 2px solid #2c70ff;
+  border-bottom: 2px solid #2c70ff;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
-
+/* flex é shorthand para: flex-grow: 2 (aumenta); flex-shrink: 1 (encolhe); flex-basis: 300px(tamanho base); */
 .sobre-info {
-	flex: 2 1 300px;
-	margin: 0 10px;
+  flex: 2 1 300px;
+  margin: 0 10px;
 }
 
 .sobre-info h1 {
-	font-size: 3em;
-	margin-bottom: .5em;
+  font-size: 3em;
+  margin-bottom: 0.5em;
 }
 
 .sobre-info p {
-	font-size: 1.25em;
-	line-height: 1.4;
-	margin-bottom: 1em;
-	color: #7c7c7c;
+  font-size: 1.25em;
+  line-height: 1.4;
+  margin-bottom: 1em;
+  color: #7c7c7c;
 }
 
 .sobre-img {
-	flex: 1 1 160px;
-	margin: 0 10px;
+  flex: 1 1 160px;
+  margin: 0 10px;
 }
